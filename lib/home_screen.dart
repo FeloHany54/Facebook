@@ -157,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Stack(
                         children: [
                           Image.asset(
-                            "assets/Image-Person2.jpg",
+                            "assets/Image-Person6.png",
                             fit: BoxFit.fill,
                             height: 150,
                             width: 90,
@@ -192,7 +192,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             top: 130,
                             left: 2.5,
                             child: Text(
-                              "Felo",
+                              "Mariam Emad",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -205,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Stack(
                         children: [
                           Image.asset(
-                            "assets/Image-Person2.jpg",
+                            "assets/Image-Person4.png",
                             fit: BoxFit.fill,
                             height: 150,
                             width: 90,
@@ -228,7 +228,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   left: 2.5,
                                   child: CircleAvatar(
                                     backgroundImage: AssetImage(
-                                      "assets/Image-Person1.png",
+                                      "assets/Image-Person6.png",
                                     ),
                                     radius: 10,
                                   ),
@@ -240,7 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             top: 130,
                             left: 2.5,
                             child: Text(
-                              "Felo",
+                              "Jero Mina",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -253,7 +253,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Stack(
                         children: [
                           Image.asset(
-                            "assets/Image-Person2.jpg",
+                            "assets/Image-Person3.jpg",
                             fit: BoxFit.fill,
                             height: 150,
                             width: 90,
@@ -276,7 +276,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   left: 2.5,
                                   child: CircleAvatar(
                                     backgroundImage: AssetImage(
-                                      "assets/Image-Person1.png",
+                                      "assets/Image-Person2.jpg",
                                     ),
                                     radius: 10,
                                   ),
@@ -288,7 +288,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             top: 130,
                             left: 2.5,
                             child: Text(
-                              "Felo",
+                              "Jana Ali",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -301,7 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Stack(
                         children: [
                           Image.asset(
-                            "assets/Image-Person2.jpg",
+                            "assets/Image-Person5.png",
                             fit: BoxFit.fill,
                             height: 150,
                             width: 90,
@@ -324,7 +324,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   left: 2.5,
                                   child: CircleAvatar(
                                     backgroundImage: AssetImage(
-                                      "assets/Image-Person1.png",
+                                      "assets/Image-Person6.png",
                                     ),
                                     radius: 10,
                                   ),
@@ -336,7 +336,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             top: 130,
                             left: 2.5,
                             child: Text(
-                              "Felo",
+                              "Nour Ahmed",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
