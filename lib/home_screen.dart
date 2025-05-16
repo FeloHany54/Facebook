@@ -249,6 +249,102 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ],
                       ),
+                      SizedBox(width: 10),
+                      Stack(
+                        children: [
+                          Image.asset(
+                            "assets/Image-Person2.jpg",
+                            fit: BoxFit.fill,
+                            height: 150,
+                            width: 90,
+                          ),
+                          Positioned(
+                            top: 5,
+                            left: 3,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Positioned(
+                                  top: 2.5,
+                                  left: 2.5,
+                                  child: CircleAvatar(
+                                    backgroundImage: AssetImage(
+                                      "assets/Image-Person1.png",
+                                    ),
+                                    radius: 10,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Positioned(
+                            top: 130,
+                            left: 2.5,
+                            child: Text(
+                              "Felo",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 10),
+                      Stack(
+                        children: [
+                          Image.asset(
+                            "assets/Image-Person2.jpg",
+                            fit: BoxFit.fill,
+                            height: 150,
+                            width: 90,
+                          ),
+                          Positioned(
+                            top: 5,
+                            left: 3,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Positioned(
+                                  top: 2.5,
+                                  left: 2.5,
+                                  child: CircleAvatar(
+                                    backgroundImage: AssetImage(
+                                      "assets/Image-Person1.png",
+                                    ),
+                                    radius: 10,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Positioned(
+                            top: 130,
+                            left: 2.5,
+                            child: Text(
+                              "Felo",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
