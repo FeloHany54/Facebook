@@ -156,11 +156,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       // ),
                       Stack(
                         children: [
-                          Image.asset(
-                            "assets/Image-Person6.png",
-                            fit: BoxFit.fill,
+                          Container(
                             height: 150,
                             width: 90,
+
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage("assets/Image-Person6.png"),
+                              ),
+                            ),
                           ),
                           Positioned(
                             top: 5,
@@ -196,6 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
+                                fontSize: 13,
                               ),
                             ),
                           ),
@@ -204,11 +211,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(width: 10),
                       Stack(
                         children: [
-                          Image.asset(
-                            "assets/Image-Person4.png",
-                            fit: BoxFit.fill,
+                          Container(
                             height: 150,
                             width: 90,
+
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage("assets/Image-Person3.jpg"),
+                              ),
+                            ),
                           ),
                           Positioned(
                             top: 5,
@@ -244,6 +257,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
+                                fontSize: 13,
                               ),
                             ),
                           ),
@@ -252,11 +266,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(width: 10),
                       Stack(
                         children: [
-                          Image.asset(
-                            "assets/Image-Person3.jpg",
-                            fit: BoxFit.fill,
+                          Container(
                             height: 150,
                             width: 90,
+
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage("assets/Image-Person4.png"),
+                              ),
+                            ),
                           ),
                           Positioned(
                             top: 5,
@@ -292,6 +312,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
+                                fontSize: 13,
                               ),
                             ),
                           ),
@@ -300,11 +321,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(width: 10),
                       Stack(
                         children: [
-                          Image.asset(
-                            "assets/Image-Person5.png",
-                            fit: BoxFit.fill,
+                          Container(
                             height: 150,
                             width: 90,
+
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage("assets/Image-Person5.png"),
+                              ),
+                            ),
                           ),
                           Positioned(
                             top: 5,
@@ -340,6 +367,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
+                                fontSize: 13,
                               ),
                             ),
                           ),
