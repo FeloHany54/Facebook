@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_facbook/Widgets/textFormField.dart';
 import 'package:my_facbook/home_screen.dart';
-import 'package:provider/provider.dart';
+import 'package:my_facbook/profile/profile_widget/saveData.dart';
+//import 'package:provider/provider.dart';
 
 // ignore: must_be_immutable
 class Login extends StatelessWidget {
@@ -33,9 +34,11 @@ class Login extends StatelessWidget {
               minWidth: MediaQuery.sizeOf(context).width,
               height: 35,
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => HomeScreen()),
-                );
+                if (passwordController != null && emailController != null) {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                }
               },
               color: Color(0xff1877F2),
               shape: RoundedRectangleBorder(

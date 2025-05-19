@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:my_facbook/Widgets/homeScreen_Story.dart';
-import 'package:my_facbook/login.dart';
+//import 'package:my_facbook/Widgets/homeScreen_Story.dart';
+//import 'package:my_facbook/login.dart';
+import 'package:my_facbook/profile/profile_widget/saveData.dart';
 import 'package:my_facbook/profile/profile_widget/user_Model.dart';
 // import 'package:my_facbook/home_screen.dart';
 import 'package:my_facbook/splash_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:firebase_core/firebase_core.dart';
+//import 'package:firebase_core/firebase_core.dart';
 //import 'firebase_options.dart';
 
 void main() async {
@@ -15,7 +16,7 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => UserModel()),
-        //ChangeNotifierProvider(create: (context) => Login()),
+        ChangeNotifierProvider(create: (context) => Savedata()),
         // ChangeNotifierProvider(create: (context) => FavoriteMadel()),
       ],
       child: const Facebook(),

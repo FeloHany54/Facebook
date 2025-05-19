@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Reacts extends StatelessWidget {
-  Reacts({super.key, required this.icon, required this.text});
-  Icon icon;
-  String text;
+  const Reacts({super.key, required this.icon, required this.text});
+  final Icon icon;
+  final String text;
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:my_facbook/login.dart';
+//import 'package:my_facbook/login.dart';
 import 'package:my_facbook/profile/profile_widget/options.dart';
+import 'package:my_facbook/profile/profile_widget/saveData.dart';
 import 'package:my_facbook/profile/profile_widget/user_Model.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
@@ -120,6 +121,14 @@ class _ProfilePageState extends State<ProfilePage> {
                 );
               },
             ),
+          ),
+          SizedBox(height: 300),
+          Text("Email : ${Savedata().getEmail()}"),
+
+          Consumer<Savedata>(
+            builder: (context, savedata, child) {
+              return Text("Password : ${savedata.getPassword()}");
+            },
           ),
         ],
       ),

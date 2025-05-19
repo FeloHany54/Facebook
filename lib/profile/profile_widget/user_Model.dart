@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -14,12 +15,12 @@ class UserModel extends ChangeNotifier {
     XFile? image = await imagePicker.pickImage(source: source);
     if (image != null) {
       if (_user != null) {
-        _user?.image = File(image!.path);
+        _user?.image = File(image.path);
       } else {
         _user = User(
           cio: "Play , Eat , Code , Films",
           name: "Felo Hany",
-          image: File(image!.path),
+          image: File(image.path),
         );
       }
       notifyListeners(); // instead of set state
