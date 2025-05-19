@@ -1,5 +1,5 @@
-import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import 'package:my_facbook/login.dart';
 import 'package:my_facbook/profile/profile_widget/options.dart';
 import 'package:my_facbook/profile/profile_widget/user_Model.dart';
 import 'package:provider/provider.dart';
@@ -15,6 +15,8 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
+    //final userData = Provider.of<Login>(context);
+
     return Scaffold(
       appBar: AppBar(title: Text("Profile")), // title of page
 
@@ -23,7 +25,7 @@ class _ProfilePageState extends State<ProfilePage> {
           Center(
             child: Consumer<UserModel>(
               // rebuild when any changes happend
-              builder: (context, UserModel, child) {
+              builder: (context, userModel, child) {
                 return Stack(
                   alignment: Alignment.bottomRight,
                   children: [
@@ -33,7 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       radius: 100,
 
                       child:
-                          UserModel.user?.image == null
+                          userModel.user?.image == null
                               ? Icon(
                                 color: Colors.white38,
                                 Icons.person,
@@ -44,7 +46,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                   height: 200,
                                   width: 200,
                                   fit: BoxFit.cover,
-                                  UserModel.user!.image!,
+                                  userModel.user!.image!,
                                 ),
                               ),
                     ),
@@ -71,7 +73,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                         children: [
                                           Options(
                                             onpressed: () {
-                                              UserModel.imageSelector(
+                                              userModel.imageSelector(
                                                 ImageSource.camera,
                                               );
                                               Navigator.pop(context);
@@ -81,7 +83,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                           ),
                                           Options(
                                             onpressed: () {
-                                              UserModel.imageSelector(
+                                              userModel.imageSelector(
                                                 ImageSource.gallery,
                                               );
                                               Navigator.pop(context);
@@ -89,12 +91,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                             title: "Gallery",
                                             icon: Icons.image,
                                           ),
-                                          if (UserModel.user?.image != null)
+                                          if (userModel.user?.image != null)
                                             Options(
                                               selectedimage:
-                                                  UserModel.user?.image,
+                                                  userModel.user?.image,
                                               onpressed: () {
-                                                UserModel.removeImage();
+                                                userModel.removeImage();
                                                 Navigator.pop(context);
                                               },
                                               title: "Delete",
