@@ -34,7 +34,8 @@ class Login extends StatelessWidget {
               minWidth: MediaQuery.sizeOf(context).width,
               height: 35,
               onPressed: () {
-                if (passwordController != null && emailController != null) {
+                if (passwordController.text != null &&
+                    emailController.text != null) {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) => HomeScreen()),
                   );
